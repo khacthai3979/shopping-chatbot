@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chuyện với Chatbot - Mental Health Chatbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Trò chuyện với Chatbot</h2>
+        <div class="card">
+            <div class="card-body">
+                <div id="chat-log" class="mb-4" style="height: 300px; overflow-y: scroll; background: #f9f9f9; padding: 10px;">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <form id="chat-form">
+                    <div class="input-group">
+                        <input type="text" id="user-input" class="form-control" placeholder="Nhập câu hỏi của bạn...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Gửi</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('chat-form').onsubmit = function(event) {
+            event.preventDefault();
+            const userInput = document.getElementById('user-input').value;
+
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const chatLog = document.getElementById('chat-log');
+                chatLog.innerHTML += '<p><strong>Bạn:</strong> ' + userInput + '</p>';
+                chatLog.innerHTML += '<p><strong>Chatbot:</strong> ' + data.reply + '</p>';
+                document.getElementById('user-input').value = '';
+            });
+        };
+    </script>
+</body>
+</html>
