@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:"roboto",serif;
+    color :white;
+}
+
+body {
+    background-color: #000000;
+    overflow:auto ;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    padding: 15px 18px !important
+
+}
+
+.logo{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.848) !important
+}
+
+.nav-item{
+    margin:0px 10px;
+}
+
+.nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 0px;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;
+
+}
+
+.nav-link:hover {
+    color: rgb(223, 205, 193)
+}
+
+.btn-navbar{
+    display: inline-block;
+    padding: 10px 43px;
+    border: 1px solid rgba(223, 205, 193);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(223, 205, 193);
+    transition: 0.2s ease;
+
+}
+
+.btn-navbar:hover{
+    background-color: transparent;
+    color: rgb(223, 205, 193);
+    border: 1px solid rgba(223, 205, 193);
+
+}
+/* Home section */
+
+.content-home2{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-heading{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 74px;
+
+}
+
+.home-heading{
+    color:rgb(223, 205, 193);
+}/* Iphone 16 pro*/
+
+
+.para-home{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(198, 187, 187, 0.623);
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+}
+
+.home-links{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    border: 1px solid rgba(223, 205, 193, 0.747);
+    background-color: rgba(223, 205, 193);
+    margin: 20px, 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+
+}
+
+.btn-2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(10, 8, 8);
+    border: 1px solid rgba(223, 205, 193, 0.747);
+    background-color: rgba(223, 205, 193);
+    margin: 20px, 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease; /* explore */
+}
+
+.home-links:hover{
+    background-color: transparent;
+    color: rgb(223, 205, 193);
+    border: 1px solid rgb(223, 205, 193) !important;
+}
+
+.img-home{
+    margin-right: 20px;
+    width: 580px;
+}
+
+/* About Us */
+
+.about-us-container{
+    width: 100%;
+    height: 80vh;
+
+}
+
+.about-us{
+    width: 100%;
+    height: 350px;  
+    background-color: rgb(30, 29, 29);
+    margin-top: 140px;
+    position: relative;
+}
+
+.content-about{
+    padding: 10px 38px;
+}
+
+.heading-about{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(223, 205, 193);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(223, 205, 193);
+    width: 46px;
+    height: 2px;
+}
+
+.para-about{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.695);
+    line-height: 21px;
+    margin: 25px 0px    ;
+}
+
+.link-about{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(223, 205, 193);
+    color: rgb(223, 205, 193);
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 22px; 
+    position: relative;
+    z-index: 22;
+}
+
+.link-about:hover{
+    color:rgb(254, 254, 254)
+}
+
+.span-about{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(223, 205, 193);
+    width: 8%;
+    height:100%;
+    z-index: -1;
+    transition: 0.4s;
+
+}
+
+.link-about:hover .span-about{
+    width: 100%;    
+}
+
+.img-about{
+    height: 42;
+    width: 50%;
+    position: absolute;
+    top: -36px;
+    right: 20px;
+
+}
+
+.img-about{
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -36px;
+    right: 20px;
+} /* apple watch*/
+
+/* Product sections css */
+
+.product-category{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+
+}
+
+.heading-product{
+    font-size: 34px;
+    color: rgb(255, 1291 53);
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(224, 156, 111);
+    width: 56px;
+    height: 2px;
+}
+
+.card-product{
+    padding: 14px;
+    background-color: #242424 !important;
+}
+
+.img-card{
+    height: 400px !important;
+}
+
+.card-title{
+    font-size: 14px;
+    color: rgb(255, 129, 53);
+    width: 1005;
+    border-bottom: 1px solid rgb(255, 119, 57);
+    padding: 5px 0px;
+    margin: 10px 0px;
+    margin-bottom: 20px !important;
+}
+
+.card-text{
+    color: rgba(255, 255, 255, 0.873);
+    font-size: 12px;
+    line-height: 22px;
+
+}
+
+.btn-product-ctg{
+    color:rgb(255, 119, 57);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-product-ctg:hover{
+    color: rgb(255, 119, 57);
+}
+
+.btn-prev, .btn-next{
+    position: relative;
+}
+
+.button-left{
+    position: absolute;
+    left: 20px;
+    padding: 10px 12px;
+    color: #100f10;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #2c2c2c;
+}
+
+.button-right{
+    position: absolute;
+    left: 20px;
+    padding: 10px 12px;
+    color: #100f10;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #2c2c2c;
+
+}
+
+.button-right:hover{
+    color: #2c2c2c;
+}
+
+/* Product Section End */
+

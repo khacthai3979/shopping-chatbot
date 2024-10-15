@@ -4,32 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ - Shopping Support Chatbot</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/4c729db828.js' crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Shopping Support Chatbot</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('login') }}">Đăng nhập</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('register') }}">Đăng ký</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('chat') }}">Trò chuyện với chatbot</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="container">
-        <div class="jumbotron text-center mt-5">
-            <h1>Chào mừng đến với Chatbot hõ trợ mua sắm </h1>
-            <p>Hỗ trợ mua sắm, giải đáp các thắc mắc và cung cấp thông tin hữu ích.</p>
-            <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">Trò chuyện ngay</a>
+
+<body>
+        <div class="header">
+            <div class="container-fluid gx-0">
+
+                
+            <nav class="navbar navbar-expand-lg">
+                <div class="container"> 
+                    <a class="navbar-brand logo" href="#">LAVAL</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">   
+                                <a class="nav-link" href="{{ url_for('login') }}">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('register') }}">Đăng ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('chat') }}">Tư vấn với chatbot</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Xu hướng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn-navbar" href="#"> Mua ngay </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </nav>    
+
+        
+                <!--  navbar Ends      -->
+    <!----   <div class="container">
+            <div class="jumbotron text-center mt-5">
+                <h1>Chào mừng đến với Chatbot hỗ trợ mua sắm </h1>
+                <p>Hỗ trợ mua sắm, giải đáp các thắc mắc và cung cấp thông tin hữu ích.</p>j
+                <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">Trò chuyện ngay</a>
+            </div>
+        </div>
+    </body>
+    </html>' -->
+
+                <div class="container">
+                    <div class="content-home">
+                        <div class="row content-home2">
+                            <div class="col-lg-7 col-md-5">
+                                <div class="box-container">
+                                    <img src="/static/images/Iphone16-nen.jpg" class="img-home" alt="banner img">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-7">
+                                <div class="box-container2">
+                                    <h1 class="home-heading">Iphone 16 Pro</h1>
+                                    <p class="para-home">
+                                        Mạnh. Đẹp
+                                        Bằng Titan
+                                    </p>
+                                    <div class="btn-home">
+                                        <a href="#" class="home-links">Buy Now</a>
+                                        <a href="#" class="home-links btn-2">Explore</a>
+                                    </div>
+                                
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
         </div>
     </div>
+            <!-- Header path -->
+
+            <!-- US path -->
+    <div class="container">
+        <div class="about-us-container">
+            <div class="about-us">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="content-about">
+                            <h3 class="heading-about">Điểm Nổi Bật </h3>
+                            <p class="para-about">Thật nhanh. Thật mượt. Cảm nhận</p>
+                            <p class="para-about">Điều khiển Camera hoàn toàn mới</p>
+                            <a href="#" class="link-about"> Tìm hiểu thêm </a>
+                        
+                        </div>
+                    </div> 
+                    <div class="col-lg-6">
+                        <img src="/static/images/chupanh.jpg" class="img-about" alt="img"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- US path ends -->
+
+    <section class="product-category">
+        <h2 class="heading-product">Các dòng sản phẩm </h2>
+        <div class="container-fluid">
+            <!--slider carosel boostrap-->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product">
+                                    <img src="/static/images/16plus_cards.jpg" class="card-img-top img-card" alt="Iphone 16 Prp">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Iphone 16 Pro </h5>
+                                      <p class="card-text">Giá cuối 26.990.000</p>
+                                      <a href="#" class="btn-product-ctg">Mua ngay <span class="icon-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product">
+                                    <img src="/static/images/16promax1tb_card.jpg" class="card-img-top img-card" alt="Iphone 16 Pro Max 1TB">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Iphone 16 Pro Max 1TB</h5>
+                                      <p class="card-text">Giá cuối 39.990.000</p>
+                                      <a href="#" class="btn-product-ctg">Mua ngay<span class="icon-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product">
+                                    <img src="/static/images/16promax_cards.jpg" class="card-img-top img-card" alt="Iphone 16 Plus">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Iphone 16 Plus</h5>
+                                      <p class="card-text">Giá cuối 21.990.000</p>
+                                      <a href="#" class="btn-product-ctg"> Mua ngay<span class="icon-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>  
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                     
+                  </div>
+                </div>
+                <!--<button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                
+                    <span><i class="fa-solid fa-arrow-left btn-scroll button-left"></i></span>
+                </button>
+                <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+                    <span><i class="fa-solid fa-arrow-right btn-scroll button-left"></i></span>
+                </button> -->
+              </div>
+        </div>
+    </section>
+
+    <!--Product Path Finish-->
+
+    
+
+
 </body>
-</html>
+        <!--Script File-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+                            
+</html>                           
+
